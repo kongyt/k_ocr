@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src = "k_ocr.js"> </script>
+</head>
+
+<body onload="k_ocr.onLoadFunction()">
+    <div id = "main-container" style="text-align: center;">
+        <h1>KOCR</h1>
+	<canvas id = "canvas" width = "200" height = "200"> </canvas>
+	<form name = "input">
+	    <p>Digit: <input id = "digit" type = "text"> </p>
+	    <input type="button" value="Train" onclick="k_ocr.train()"/>
+	    <input type="button" value="Test" onclick="k_ocr.test()"/>
+	    <input type="button" value="Reset" onclick="k_ocr.resetCanvas();"/>
+	</form>
+    </div>
+</body>
+</html>
